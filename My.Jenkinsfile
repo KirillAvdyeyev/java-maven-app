@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-                echo 'Hello Building! Time: ${new Date()}'
+                echo 'Hello Building!}'
             }
         }
         stage("Test") {
             steps {
-                echo 'Hello Testing! Time: ${new Date()}'
+                echo 'Hello Testing!}'
             }
         }
         stage("Deploy") {
             steps {
-                echo 'Hello Deploying! Time: ${new Date()}'
+                echo 'Hello Deploying!}'
             }
         }
     }
