@@ -1,19 +1,19 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage("Build") {
             steps {
-                echo 'Hello BuildING!'
+                echo 'Hello Building! Time: ${new Date()}'
             }
         }
-        stage('Test') {
+        stage("Test") {
             steps {
-                echo 'Hello Testing!'
+                echo 'Hello Testing! Time: ${new Date()}'
             }
         }
-        stage('Deploy') {
+        stage("Deploy") {
             steps {
-                echo 'Hello Deploying!'
+                echo 'Hello Deploying! Time: ${new Date()}'
             }
         }
     }
