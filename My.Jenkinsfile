@@ -3,20 +3,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'ls -la'
-                echo 'Hello world!'
+                echo 'Hello BuildING!'
             }
         }
         stage('Test') {
             steps {
-                sh 'ls -la'
-                echo 'Hello world!'
+                echo 'Hello Testing!'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'ls -la'
-                echo 'Hello world!'
+                echo 'Hello Deploying!'
             }
         }
     }
